@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>x4AI Token – AI-to-AI Payments</title>
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="x4ai.jpg">
+<meta name="description" content="x4AI Token powers AI-to-AI payments, agent registration, and reputation levels for autonomous systems." />
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <h1>x4AI Token</h1>
+      <p class="lead">The utility token for AI-to-AI payments, on-chain metering, agent registration, and reputation levels across the x4AI network.</p>
+      <div class="contract">
+        <strong>Contract:</strong>
+        <span class="code" id="contract">SOLANA_ADDRESS_HERE</span>
+        <button class="btn" id="copybtn" onclick="copyAddr()">Copy</button>
+        <span class="badge">Solana</span>
+        <span class="badge">Utility</span>
+      </div>
+      <div class="kpi">
+        <div class="box">
+          <div class="muted">Total Supply</div>
+          <div style="font-weight:600;font-size:18px">1,000,000,000 x4AI</div>
+        </div>
+        <div class="box">
+          <div class="muted">Use Cases</div>
+          <div style="font-weight:600;font-size:18px">Pay-per-Call • Agent Fees • Staking</div>
+        </div>
+        <div class="box">
+          <div class="muted">Status</div>
+          <div style="font-weight:600;font-size:18px">Live • V1</div>
+        </div>
+      </div>
+    </header>
+
+    <section class="grid">
+      <article class="card span6">
+        <h2>Burn &amp; Register (Agent Core)</h2>
+        <p>Agent operators permanently burn a small amount of x4AI to register their agent (or edge device) and bind a verifiable on-chain identity.</p>
+        <ul>
+          <li>One-time burn per agent registration</li>
+          <li>Unregistered agents appear with a warning & lower discovery priority</li>
+          <li>Registration cost can adjust with network demand</li>
+        </ul>
+      </article>
+
+      <article class="card span6">
+        <h2>x4 Levels (Reputation)</h2>
+        <p>Hold x4AI to achieve higher verification levels. Levels unlock premium features and signal trust across the network.</p>
+        <ul>
+          <li><strong>Level 0:</strong> Unregistered — warning badge, limited visibility</li>
+          <li><strong>Level 1:</strong> Minimum balance; standard features; trusted badge</li>
+          <li><strong>Level 2+:</strong> Higher balances; priority routing, enhanced visibility, support</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Token Usage Flow</h2>
+        <h3>1) Registration</h3>
+        <p>Operator burns required x4AI → agent marked “Registered” in discovery and client apps.</p>
+        <h3>2) Level Achievement</h3>
+        <p>Operator (or agent wallet) maintains x4AI balance → dynamic level badge shown across taps, connects, and API calls.</p>
+        <h3>3) Pay-per-Call</h3>
+        <p>Consumers or agents pay per API/tool call in x4AI; metering + receipts are on-chain for verifiability.</p>
+      </article>
+
+      <article class="card span4">
+        <h2>Roadmap</h2>
+        <ul>
+          <li><strong>SDKs:</strong> JS/TS, Python client, and Agent Manifest tooling</li>
+          <li><strong>Pay-per-Call Gateway:</strong> On-chain metering + receipts</li>
+          <li><strong>Agent Registry:</strong> Search & verify registered agents</li>
+          <li><strong>Mobile & Web:</strong> Wallet-native “tap & connect” flows</li>
+          <li><strong>Docs & Examples:</strong> Templates, quickstarts, guides</li>
+        </ul>
+      </article>
+
+      <article class="card span4">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="#" target="_blank" rel="noopener">Streamflow Vesting</a></li>
+          <li><a href="#" target="_blank" rel="noopener">Lock Contract</a></li>
+          <li><a href="#" target="_blank" rel="noopener">Whitepaper / Docs</a></li>
+          <li><a href="#" target="_blank" rel="noopener">SDK (GitHub)</a></li>
+        </ul>
+        <div class="divider"></div>
+        <p><span class="badge">Solana</span><span class="badge">SPL</span><span class="badge">On-chain Metering</span></p>
+      </article>
+
+      <article class="card">
+        <h2>Important Legal Disclaimers</h2>
+        <p><strong>UTILITY TOKEN — NOT AN INVESTMENT OR SECURITY.</strong> x4AI is intended solely for use within the x4AI ecosystem for agent registration, reputation levels, and AI-to-AI payments.</p>
+        <ul>
+          <li>No investment advice; consult your own advisors</li>
+          <li>Crypto is high risk; values can go to zero</li>
+          <li>Users must comply with local laws/regulations</li>
+          <li>No guarantees on future functionality or availability</li>
+        </ul>
+        <p class="muted">By using x4AI you agree to the Terms and Privacy Policy.</p>
+      </article>
+    </section>
+
+    <footer class="footer">
+      © <span id="year"></span> x4AI. AI-to-AI payments on Solana.
+    </footer>
+  </div>
+<script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+<script src="script.js"></script>
+</body>
+</html>
